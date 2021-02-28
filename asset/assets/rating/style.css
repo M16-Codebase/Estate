@@ -1,0 +1,77 @@
+body {
+	color: #555;
+	background-color: #fff;
+	font-family: "lucida grande", "helvetica", "arial", sans-serif;
+	font-size: 76%;
+	line-height: 1.2em;
+	margin:0; 
+	padding:0;
+}
+
+pre {
+	font-size: 1.1em;
+	padding-bottom: 1em;
+}
+
+.download {
+	background: #efa;
+	padding: 1em;
+	margin-top: 2em;
+}
+
+.download h4 {
+	margin: 0;
+	font-size: 1.2em;
+	padding-bottom: 1em;
+}
+
+.header {
+	background: #a11;
+	color:#fff;
+	padding: 1em;
+	border-bottom: 4px solid #efa;
+}
+
+.header h2 {
+	color: #FFAFAF;
+}
+
+.footer {
+	background: #000;
+	padding: 1em;
+	text-align: right;
+	color: #fff;
+	border-top: 4px solid #aaa;
+}
+
+.footer a {
+	color: #f10;
+}
+
+.demos {
+	padding: 1em;
+}
+
+.demo {
+	padding: 0.5em;	
+}
+
+.demos h3 {
+	color: #a11;
+	border-bottom: 1px solid #aaa;
+}
+
+.source {
+	background: #eee;
+	font-family: monospace;
+	font-size: 1.1em;
+	padding: 1em;
+	display: block;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,232 @@
+AddDefaultCharset UTF-8
+php_value max_input_vars 5000
+php_value memory_limit 2048M
+
+php_value max_execution_time 3600
+php_value max_input_time 3600
+
+<ifModule mod_headers.c>
+	
+	<FilesMatch "\.(html|htm)$">
+		Header set Cache-Control "max-age=43200"
+	</FilesMatch>
+	
+	<FilesMatch "\.(js|css|txt|woff)$">
+		Header set Cache-Control "max-age=604800"
+	</FilesMatch>
+	
+	<FilesMatch "\.(flv|swf|ico|gif|jpg|jpeg|png)$">
+		Header set Cache-Control "max-age=2592000"
+	</FilesMatch>
+	
+	<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+		Header unset Cache-Control
+	</FilesMatch>
+</IfModule>
+
+<ifModule mod_expires.c>
+	ExpiresActive On
+	ExpiresDefault "access plus 5 seconds"
+	ExpiresByType image/x-icon "access plus 2592000 seconds"
+	ExpiresByType image/jpeg "access plus 2592000 seconds"
+	ExpiresByType image/png "access plus 2592000 seconds"
+	ExpiresByType image/gif "access plus 2592000 seconds"
+	ExpiresByType application/x-shockwave-flash "access plus 2592000 seconds"
+	ExpiresByType text/css "access plus 604800 seconds"
+	ExpiresByType text/javascript "access plus 604800 seconds"
+	ExpiresByType application/javascript "access plus 604800 seconds"
+	ExpiresByType application/x-javascript "access plus 604800 seconds"
+	ExpiresByType text/html "access plus 43200 seconds"
+	ExpiresByType application/xhtml+xml "access plus 600 seconds"
+</ifModule>
+
+<ifModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
+</ifModule>
+
+RewriteEngine On
+
+####################################################
+#################### R E D I R E C T ###############
+###################### http to https ###############
+
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+############### E N D   R E D I R E C T #############
+#####################################################
+
+
+RewriteCond %{REQUEST_URI} ^/commerce$
+RewriteRule ^.*$ http://m16-estate.ru/commercial/? [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/abroad$
+RewriteRule ^.*$ http://m16-estate.ru/? [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/elite$
+RewriteRule ^.*$ http://m16-elite.ru/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/zhk-krestovskij-de-luxe$
+RewriteRule ^.*$ http://m16-elite.ru/real-estate/complex/krestovskij-de-l/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/1-polevaja-ulica$
+RewriteRule ^.*$ http://m16-elite.ru/resale/1-ja-polevaja-ul/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/voskresenskaja-nab-4$
+RewriteRule ^.*$ http://m16-elite.ru/resale/voskresenskaja-n/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/2$
+RewriteRule ^.*$ http://m16-elite.ru/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/3$
+RewriteRule ^.*$ http://m16-elite.ru/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/martynova-nab-62$
+RewriteRule ^.*$ http://m16-elite.ru/resale/martynova-nab-62/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/zhiloj-kompleks-privilegija_1$
+RewriteRule ^.*$ http://m16-elite.ru/real-estate/complex/privilegija/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/nab-fontanki-54$
+RewriteRule ^.*$ http://m16-elite.ru/resale/fontanki-nab-54/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/klubnyj-dom-hovard-palace$
+RewriteRule ^.*$ http://m16-elite.ru/real-estate/complex/klubnyj-dom-hova/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/krestovskij-de-lux$
+RewriteRule ^.*$ http://m16-elite.ru/real-estate/complex/krestovskij-de-l/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/primorskij-43$
+RewriteRule ^.*$ http://m16-elite.ru/district/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/naberezhnaja-martynova$
+RewriteRule ^.*$ http://m16-elite.ru/resale/martynova-nab-74/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/ul-korpusnaja9$
+RewriteRule ^.*$ http://m16-elite.ru/resale/ul-korpusnaja-9/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/rjuhina-12$
+RewriteRule ^.*$ http://m16-elite.ru/resale/ul-rjuhina-12/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/ul-italjanskaja$
+RewriteRule ^.*$ http://m16-elite.ru/resale/italjanskaja-ul-/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/4$
+RewriteRule ^.*$ http://m16-elite.ru/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/tavricheskaja-ul$
+RewriteRule ^.*$ http://m16-elite.ru/resale/tavricheskaja-ul/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/primorskij-pr$
+RewriteRule ^.*$ http://m16-elite.ru/real-estate/complex/life-primorskij/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/999$
+RewriteRule ^.*$ http://m16-elite.ru/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/konstantinovskij-pr$
+RewriteRule ^.*$ http://m16-elite.ru/real-estate/complex/diadema-club-hou/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/monferran$
+RewriteRule ^.*$ http://m16-elite.ru/real-estate/complex/monferran/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/kamennoostrovskij-pr_431$
+RewriteRule ^.*$ http://m16-elite.ru/resale/kamennoostrovski/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/primorskij$
+RewriteRule ^.*$ http://m16-elite.ru/district/saint-petersburg/petrogradskij-ra/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/martynova-74$
+RewriteRule ^.*$ http://m16-elite.ru/resale/martynova-nab-62/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/admiraltejskij$
+RewriteRule ^.*$ http://m16-elite.ru/resale/?district%5B%5D=87&view=list? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/centralnyj$
+RewriteRule ^.*$ http://m16-elite.ru/district/saint-petersburg/zolotoj-treugolj/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/petrogradskiy$
+RewriteRule ^.*$ http://m16-elite.ru/district/saint-petersburg/petrogradskij-ra/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/gorodskaja$
+RewriteRule ^.*$ http://m16-elite.ru/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/petrogradskiy/2$
+RewriteRule ^.*$ http://m16-elite.ru/district/saint-petersburg/petrogradskij-ra/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/brilliant_house_202$
+RewriteRule ^.*$ http://m16-elite.ru/real-estate/complex/klubnyj-dom-bril/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/granvil_235$
+RewriteRule ^.*$ http://m16-elite.ru/real-estate/complex/granvil/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/dom_na_grota_104$
+RewriteRule ^.*$ http://m16-elite.ru/real-estate/complex/dom-na-ulitse-gr/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/klassika_69$
+RewriteRule ^.*$ http://m16-elite.ru/real-estate/complex/klassika/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/1$
+RewriteRule ^.*$ http://m16-elite.ru/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/ul-korpusnaja-9$
+RewriteRule ^.*$ http://m16-elite.ru/resale/ul-korpusnaja-9/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/sobranie_77$
+RewriteRule ^.*$ http://m16-elite.ru/real-estate/complex/sobranie/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/life_155$
+RewriteRule ^.*$ http://m16-elite.ru/real-estate/complex/life-primorskij/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/pesochnaja-naberezhnaja$
+RewriteRule ^.*$ http://m16-elite.ru/resale/pesochnaja-nab-4_1/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/graftio-ul-5$
+RewriteRule ^.*$ http://m16-elite.ru/resale/ul-graftio-5/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/3kkv-korpusnaja-ul-9$
+RewriteRule ^.*$ http://m16-elite.ru/resale/ul-korpusnaja-9/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/bolshaja-morskaja-13$
+RewriteRule ^.*$ http://m16-elite.ru/resale/boljshaja-morska/? [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/elite/leontevskij-mys$
+RewriteRule ^.*$ http://m16-elite.ru/? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/leontevskijj_mys_214$
+RewriteRule ^.*$ http://m16-elite.ru/? [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/elite/pesochnaja-nab-12$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/pesochnaja-nab-12? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/kemskaja-1_769$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/kemskaja-1_769? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/dom-u-lazarevskogo-mosta$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/dom-u-lazarevskogo-mosta? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/ul-zhdanovskaja-10-lit-a$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/ul-zhdanovskaja-10-lit-a? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/morskoj-prospekt_1$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/morskoj-prospekt_1? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/ul-zhdanovskaja-10-lit-a_907$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/ul-zhdanovskaja-10-lit-a_907? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/tapiola_419$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/tapiola_419? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/sluckaja-ul-14$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/sluckaja-ul-14? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/beregovaja-ul-25k1$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/beregovaja-ul-25k1? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/kamennoostrovskij-pr_8$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/kamennoostrovskij-pr_8? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/kamennoostrovskij-pr-64$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/kamennoostrovskij-pr-64? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/beregovaja-ul-25k1$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/beregovaja-ul-25k1? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/crystal$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/crystal? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/samocvety_174$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/samocvety_174? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/vyborgskij$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/vyborgskij? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/richart-club-1$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/richart-club-1? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/lumiere_415$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/lumiere_415? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/malaja-zelenina-d122$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/malaja-zelenina-d122? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/ul-b-ozernaja$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/ul-b-ozernaja? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/novella_78$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/novella_78? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/zhdanovskaja-ulica$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/zhdanovskaja-ulica? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/lotos_tower_215$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/lotos_tower_215? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/aleksandriya_76$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/aleksandriya_76? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/petrovskij-14_1015$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/petrovskij-14_1015? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/orlovskaja-1$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/orlovskaja-1? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/ul-zhdanovskaja-10-1kkv$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/ul-zhdanovskaja-10-1kkv? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/tavricheskaja-15$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/tavricheskaja-15? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/elite/krestovskij-pr-15$
+RewriteRule ^.*$ http://m16-estate.ru/exclusive/krestovskij-pr-15? [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www.m16-estate.ru$
+RewriteRule ^(.*)$ http://m16-estate.ru/$1 [R=301,L]
+
+#RewriteEngine on
+#RewriteRule (.+)/$ /$1/ [L,R=301]
+
+#RewriteEngine on
+#RewriteCond %{HTTP_HOST} (.*)
+#RewriteCond %{REQUEST_URI} /$ [NC]
+#RewriteRule ^(.*)(/)$ http://m16-estate.ru/$1 [L,R=301]
+
+RewriteEngine on
+RewriteCond $1 !^(index\.php|robots\.txt|uploads|asset|modules|dumper|shuvalovskiy|zhk-sofiya|yuzhnaya-akvatoriya|zhk-parusa|novayaohta|mailru-domainXCjipJPHXLLtrRRP.html|info.php)
+RewriteCond %{REQUEST_URI} !\.(css|js|jpg|gif|xml|ico)$
+RewriteRule ^(.*)$ /index.php?/$1 [L]
+
+
+
+
+

@@ -1,0 +1,19 @@
+{
+  "name": "Агентство недвижимости Вячеслава Малафеева М16",
+  "short_name": "M16",
+  "display": "standalone",
+  "gcm_sender_id": "646742024634",
+  "start_url": "https://m16-estate.ru/",
+  "background_color": "#02A7E9",
+  "description": "Лучшие предложения на рынке жилой, загородной и коммерческой недвижимости",
+  "icons": [{
+    "src": "/asset/uploads/images/manifest-icon.png",
+    "sizes": "64x64",
+    "type": "image/png"
+  },
+   {
+    "src": "/asset/uploads/images/manifest-icon-big.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }]
+}

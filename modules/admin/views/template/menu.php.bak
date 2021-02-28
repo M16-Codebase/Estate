@@ -1,0 +1,9 @@
+<style>.menuClick.current { border-left: none; }.menuClick.current:before { border:none; }</style>
+<?/*
+<section class="navigable">	
+    <ul class="big-menu white-gradient dark-text-bevel">    */ ?>                
+        <?php echo $menu; ?>
+<? /*        			
+	</ul>
+</section>
+*/ ?>

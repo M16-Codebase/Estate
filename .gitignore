@@ -1,0 +1,17 @@
+/asset/_thumbs/
+/asset/images/
+/asset/img/
+/asset/uploads/
+/asset/cms.sql
+/asset/xml/
+/codeigniter/
+/apex/logs/
+/apex/cache/
+/backup.tar
+/desktop.ini
+/m16.211014.sql
+/webstat/
+/.idea/
+.vscode/settings.json
+.vscode/estate.code-workspace
+.vscode/sftp.json

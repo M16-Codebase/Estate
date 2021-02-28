@@ -1,0 +1,129 @@
+@font-face {
+	font-family: "Gotham-Pro";
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/Gotham-Pro/Gotham-Pro.eot");
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/Gotham-Pro/Gotham-Pro.eot?#iefix")format("embedded-opentype"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/Gotham-Pro/Gotham-Pro.woff") format("woff"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/Gotham-Pro/Gotham-Pro.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Gotham-Pro-Light";
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/Gotham-Pro-Light/Gotham-Pro-Light.eot");
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/Gotham-Pro-Light/Gotham-Pro-Light.eot?#iefix")format("embedded-opentype"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/Gotham-Pro-Light/Gotham-Pro-Light.woff") format("woff"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/Gotham-Pro-Light/Gotham-Pro-Light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Gotham-Pro-Medium";
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/Gotham-Pro-Medium/Gotham-Pro-Medium.eot");
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/Gotham-Pro-Medium/Gotham-Pro-Medium.eot?#iefix")format("embedded-opentype"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/Gotham-Pro-Medium/Gotham-Pro-Medium.woff") format("woff"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/Gotham-Pro-Medium/Gotham-Pro-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Open-Sans";
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans/open-sans.eot");
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans/open-sans.eot?#iefix")format("embedded-opentype"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans/open-sans.woff") format("woff"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans/open-sans.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Open-Sans-Regular";
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans-regular/open-sans-regular.eot");
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans-regular/open-sans-regular.eot?#iefix")format("embedded-opentype"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans-regular/open-sans-regular.woff") format("woff"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans-regular/open-sans-regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Open-Sans-Bold";
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans-bold/open-sans-bold.eot");
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans-bold/open-sans-bold.eot?#iefix")format("embedded-opentype"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans-bold/open-sans-bold.woff") format("woff"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans-bold/open-sans-bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Open-Sans-Italic";
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans-italic/open-sans-italic.eot");
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans-italic/open-sans-italic.eot?#iefix")format("embedded-opentype"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans-italic/open-sans-italic.woff") format("woff"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans-italic/open-sans-italic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Open-Sans-Semibold";
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans-semibold/open-sans-semibold.eot");
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans-semibold/open-sans-semibold.eot?#iefix")format("embedded-opentype"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans-semibold/open-sans-semibold.woff") format("woff"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/open-sans-semibold/open-sans-semibold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Ubuntu-Light-Italic";
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/ubuntu-light-italic/ubuntu-light-italic.eot");
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/ubuntu-light-italic/ubuntu-light-italic.eot?#iefix")format("embedded-opentype"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/ubuntu-light-italic/ubuntu-light-italic.woff") format("woff"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/ubuntu-light-italic/ubuntu-light-italic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Intro";
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/intro/intro.eot");
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/intro/intro.eot?#iefix")format("embedded-opentype"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/intro/intro.woff") format("woff"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/intro/intro.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Geometria-Bold";
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/Geometria-Bold/Geometria-Bold.eot");
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/Geometria-Bold/Geometria-Bold.eot?#iefix")format("embedded-opentype"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/Geometria-Bold/Geometria-Bold.woff") format("woff"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/Geometria-Bold/Geometria-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Geometria";
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/Geometria/Geometria.eot");
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/Geometria/Geometria.eot?#iefix")format("embedded-opentype"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/Geometria/Geometria.woff") format("woff"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/Geometria/Geometria.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "GathamProBold";
+	src: url("https://m16-estate.ru/asset/assets/design-page/fonts/GOTHAPROBLA.OTF")  format("opentype");
+	/* src: url("https://m16-estate.ru/asset/assets/design-page/fonts/Geometria.eot?#iefix")format("embedded-opentype"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/Geometria/Geometria.woff") format("woff"),
+	url("https://m16-estate.ru/asset/assets/design-page/fonts/Geometria/Geometria.ttf") format("truetype"); */
+	font-style: normal;
+	font-weight: normal;
+}

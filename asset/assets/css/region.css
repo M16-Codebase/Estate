@@ -1,0 +1,62 @@
+﻿ul.about-line li {padding-right: 70px;}
+ul.about-line li:last-child {padding-right: 0;}
+
+.about-regions {background: #FFF url('/asset/assets/img/regions-bg.png') no-repeat; margin-top: 42px;}
+.about-regions .oneblck a {color: #fff; background: url('/asset/assets/img/about-arrow-w.png') no-repeat right center;}
+
+.taj {text-align: justify;}
+.contain p {line-height: 30px;}
+.block-c2 > div {width: 50%; float: left;}
+
+.about-regions .abtxt {padding-left: 56px; padding-top: 65px;}
+.about-regions .about-btm {padding-left: 70px; padding-top: 248px;}
+
+.about-solist       {padding: 0 15px; text-transform: uppercase;}
+.about-solist ul li {margin: 18px 0 28px;}
+.about-solist h4    {color: #009ee1;}
+.about-solist p     {text-transform: none;}
+.about-exp .one-col-about {margin-right: 0;}
+
+.fw-box                 {margin-top: 50px; font-size: 14px; line-height: 35px;}
+.fw-box.city            {background: #F0F0F0 url('/asset/assets/img/about-back-city.jpg') no-repeat top center; background-size: cover; padding: 40px 0;}
+.fw-box .lc             {width: 50%; float: left; position: relative;}
+.fw-box .lc.fill        {color: #fff; background: #009de0; border: 1px solid #4fbbe9; border-width: 1px 0;}
+.fw-box .lc.fill > div  {width: 640px; float: right; padding: 20px; text-transform: uppercase;}
+.fw-box .lc.fill:after  {display: block; width: 26px; height: 52px; background: url('/asset/assets/img/abrghtslide.png') no-repeat 0 0; position: absolute; right: -25px; top: 50%; margin-top: -26px; z-index: 10; content: '';}
+.fw-box .rc             {float: right; width: 50%;}
+.fw-box .rc.hotel       {background: #f4f4f4 url('/asset/assets/img/regions-hotel.jpg') no-repeat 0 0; height: 700px; margin-top: -15px;}
+
+ul.sep {list-style: none; text-transform: uppercase; font-weight: bold;}
+ul.sep li {margin-bottom: 20px; line-height: 20px;}
+
+#fly {background: url('/asset/assets/img/regions-fly.png') no-repeat 0 0; width: 538px; height: 241px; position: absolute; right: -30px; top: -150px;}
+#car {margin-left: -28px; margin-top: 10px; width: 659px; height: 258px; background: url('/asset/assets/img/regions-car.jpg') no-repeat;}
+#call {background: url('/asset/assets/img/regions-call.jpg') no-repeat center; height: 340px;}
+
+.turoff .show-ordercall {background: #ffa000; padding: 12px 30px; color: #FFF; font-family: 'Geometria-Bold'; font-size: 18px; text-transform: uppercase; margin-top: 14px; letter-spacing: 1px; display: inline-block;}
+.turoff .show-ordercall:active, .turoff .show-ordercall:focus{text-decoration: none; outline: none;}
+.turoff .show-ordercall:hover {text-decoration: none;}
+
+ul.dot li {background: url('/asset/assets/img/dot6.png') no-repeat 0 15px; padding-left: 15px; list-style: none;}
+
+.about-solist a {
+    color: #000;
+    font-family: 'Geometria-Bold';
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.special {width: 640px;}
+
+@media (max-width: 1279px) {
+    ul.about-line li {padding-right: 32px;}
+    ul.about-line li a {font-size: 12px;}
+    .about-regions .about-btm {padding-top: 184px;}
+    #fly {right: -80px;}
+    #car {width: 504px; background-size: contain; background-position: 0 30px;}
+    .special {width: auto;}
+    .fw-box .lc.fill > div {width: auto;}
+}

@@ -1,0 +1,55 @@
+<div class="notshow fsblock clearfix">
+    <div class="fsleft">
+        <span class="fssearch">Быстрый поиск</span>
+        <a href="#" class="change_fs_res active" id="metrofs">По станциям метро</a>
+        <a href="#" class="change_fs_res" id="rayonfs">По районам</a>
+    </div>
+    <div class="fsrght">
+        <div class="metrofs clearfix fslinksblock active">
+            <?php
+            $this->load->model('metro/metro_model','metro_model');
+            $metro = $this->metro_model->getAllFastFilter();
+			if(!isset($link)) { $link = ''; }
+            $cm = count($metro);
+            if ($cm > 0){
+                $km = 0;
+                $half = ($cm > 5) ? (int)ceil(($cm) / 5) : 1;
+                ?>
+                <ul>
+                <?php foreach ($metro as $k => $v) { ?>
+                    <?php if($km == $half){ $km = 0; ?>
+                        </ul>
+                        <ul>
+                    <?php } $km++; ?>
+                    <li>
+                        <?php if ($link !== $v['link']) { ?><a href="/buildings/<?php echo $v['link']; ?>"><?php } ?><?php echo $v['name']; ?><?php if (isset($link) AND $link !== $v['link']) { ?></a><?php } ?>
+                    </li>
+                <?php } ?>
+                </ul>
+            <?php } ?>
+        </div>
+        <div class="rayonfs clearfix fslinksblock">
+            <?php
+            $this->load->model('rayon/rayon_model','rayon_model');
+            $metro = $this->rayon_model->getAllFastFilter();
+            $cm = count($metro);
+            if ($cm > 0){
+                $km = 0;
+                $half = ($cm > 5) ? (int)ceil(($cm) / 5) : 1;
+                ?>
+                <ul>
+                <?php foreach ($metro as $k => $v) { ?>
+                    <?php if($km == $half){ $km = 0; ?>
+                        </ul>
+                        <ul>
+                    <?php } $km++; ?>
+                    <li>
+                        <?php if ($link !== $v['link']) { ?><a href="/buildings/<?php echo $v['link']; ?>"><?php } ?><?php echo $v['name']; ?><?php if (isset($link) AND $link !== $v['link']) { ?></a><?php } ?>
+                    </li>
+                <?php } ?>
+                </ul>
+            <?php } ?>
+        </div>
+    </div>
+    <a href="#" class="closefs"></a>
+</div>
